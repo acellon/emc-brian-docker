@@ -13,10 +13,10 @@ through the installation procedure there, do the following:
 3.  Build the Docker container (note the final dot): `docker build -t emc-container .`
 4.  Run the container, making sure to open the correct port and mounting our
     local source folder as a volume:
-    `docker run -it -p 8888:8888 -v /PATH/TO/DIR/brian-example/src:/home/jovyan/work:rw emc-container`
-    -   NB: replace `/PATH/TO/DIR/` with the absolute path to the folder on your
-        machine, but don't change `/home/jovyan/work` - this is the folder in
-        the container
+    `docker run -it -p 8888:8888 -v /PATH/TO/DIR/emc-brian-docker/src:/home/jovyan/work:rw emc-container`
+    -   _NB:_ replace `/PATH/TO/DIR/` with the absolute path to the folder on your
+        machine, but don't change `/home/jovyan/work` (this is the path within
+        the container)
 5.  Open an internet browser and navigate to the url from the terminal - you
     should find the Jupyter notebook and everything should work!
 
